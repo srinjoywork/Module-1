@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <div class="w-full bg-white-a700">
+    <div class="mb-[4.50rem] flex w-[74%] flex-col gap-[7.13rem] lg:w-full lg:gap-[7.13rem] md:w-full md:gap-[5.31rem] sm:gap-[3.56rem] bg-[#F6F8FB]">
+      <header class="flex items-center justify-around mt-4 gap-[1.25rem]">
+          <!-- Logo -->
+          <img src="public/images/img_header_logo.png" alt="Header Logo"
+              class="h-[2.25rem] w-[11.38rem] object-contain" />
+          
+          <!-- Navigation -->
+          <ul class="flex gap-[1.25rem]">
+              <li><a href="#"><p class="size-textmd text ui !font-roboto">Home</p></a></li>
+              <li class="relative group">
+                  <a href="#" class="flex items-center gap-2">
+                      <p class="size-textmd text ui !font-roboto">Advertise</p>
+                      <span class="text-lg">▼</span>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <ul class="absolute left-0 hidden mt-2 space-y-2 bg-white shadow-lg group-hover:block">
+                      <li><a href="#" class="block px-4 py-2 text-gray-700">Option 1</a></li>
+                      <li><a href="#" class="block px-4 py-2 text-gray-700">Option 2</a></li>
+                      <li><a href="#" class="block px-4 py-2 text-gray-700">Option 3</a></li>
+                  </ul>
+              </li>
+              <li class="relative group">
+                  <a href="#" class="flex items-center gap-2">
+                      <p class="size-textmd text ui !font-roboto">Support</p>
+                      <span class="text-lg">▼</span>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <ul class="absolute left-0 hidden mt-2 space-y-2 bg-white shadow-lg group-hover:block">
+                      <li><a href="#" class="block px-4 py-2 text-gray-700">FAQ</a></li>
+                      <li><a href="#" class="block px-4 py-2 text-gray-700">Contact Support</a></li>
+                      <li><a href="#" class="block px-4 py-2 text-gray-700">Live Chat</a></li>
+                  </ul>
+              </li>
+              <li><a href="#"><p class="size-textmd text ui !font-roboto">Contact</p></a></li>
+              <li><a href="#"><p class="size-textmd text ui !font-roboto">About Us</p></a></li>
+          </ul>
+          
+          <!-- Register Button -->
+          <button class="round fill size-xs gray_50_02 button ui h-[3.13rem] min-w-[9.38rem] self-center !rounded-[5px] border-2 border-solid border-purple-600 !bg-gray-50_02 px-[1.38rem] text-[1.00rem] font-bold tracking-[0.00rem] !text-purple-600 lg:text-[0.81rem] sm:px-[1.00rem]">
+              Register Now
+          </button>
+      </header>
+      
+      <!-- Hero Section -->
+      <div class="flex items-center justify-between flex-row px-4 sm:px-8 md:px-0">
+          <div class="mt-[1.88rem] px-8 flex w-[50%] flex-col gap-[4.25rem] md:w-full sm:gap-[2.13rem]">
+              <!-- Heading Section -->
+              <div class="flex flex-col gap-[1.75rem]">
+                  <h1 class="size-heading5xl heading ui leading-[5.00rem] tracking-[-0.06rem] !text-gray-900 lg:text-[3.00rem]">
+                      Great software is<br />built with amazing <br />developers
+                  </h1>
+                  <div class="flex flex-col">
+                      <h2 class="size-textxl heading ui w-[76%] !font-normal leading-[2.63rem] !text-gray-900 lg:w-full md:w-full">
+                          We help build and manage a team of world-class developers to bring your vision to life
+                      </h2>
+                      <!-- Newsletter Subscription -->
+                      <div class="flex justify-center gap-[0.94rem] sm:flex-col">
+                          <label class="round fill size-md white_a700 input ui h-[4.00rem] w-[60%] !rounded-lg !bg-white-a700 px-[1.38rem] text-[1.00rem] !text-gray-900_66 !shadow-xs sm:w-full sm:px-[1.00rem]">
+                              <input name="field_one" placeholder="Subscribe newsletter" type="text" />
+                          </label>
+                          <button class="round fill size-md purple_600 button ui h-[4.00rem] min-w-[11.25rem] !rounded !bg-purple-600 px-[2.13rem] text-[1.25rem] font-bold !text-white lg:text-[1.06rem] sm:px-[1.00rem]">
+                              Subscribe
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              <!-- Sponsors Section -->
+              <div class="flex items-start gap-[1.31rem] md:flex-col">
+                  <p class="size-textmd text ui !text-blue_gray-600_99">Sponsored by:</p>
+                  <div class="flex gap-[1.75rem] self-center md:mr-0 sm:flex-col">
+                      <img src="public/images/img_paypal.png" alt="Paypal" class="h-[1.75rem] w-[32%] object-contain sm:w-full" />
+                      <img src="public/images/img_google.png" alt="Google" class="h-[1.75rem] w-[28%] object-contain sm:w-full" />
+                  </div>
+              </div>
+          </div>
+          <!-- Image Section -->
+          <img src="public/images/img_img.png" alt="Image" class="h-[45.13rem] w-[50%] object-contain md:w-full sm:w-full" />
+      </div>
+  </div>
+    
+
+    <main>
+       
+
+       
+    </main>
+
+    <footer>
+        
+    </footer>
+  </div>
+</body>
+</html>
