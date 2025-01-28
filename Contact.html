@@ -23,7 +23,7 @@
 
           <!-- Navigation -->
           <nav class="hidden md:flex space-x-6">
-            <a href="#" class="text-gray-700 hover:text-purple-600">Home</a>
+            <a href="/Home.html" class="text-gray-700 hover:text-purple-600">Home</a>
             <div class="relative group">
               <a href="#" class="text-gray-700 hover:text-purple-600 flex items-center gap-1">Advertise
                 <span>▼</span></a>
@@ -53,7 +53,7 @@
                 </li>
               </ul>
             </div>
-            <a href="#" class="text-gray-700 hover:text-purple-600">Contact</a>
+            <a href="/Contact.html" class="text-gray-700 hover:text-purple-600">Contact</a>
             <a href="#" class="text-gray-700 hover:text-purple-600">About Us</a>
           </nav>
 
@@ -105,39 +105,104 @@
         <h2 class="text-2xl font-bold text-center mb-6">Get in touch with us.</h2>
         <p class="text-center text-gray-600 mb-6">We're here to assist you.</p>
         <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl">
-          <form class="space-y-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input type="text" placeholder="Full name" class="w-full border p-2 rounded" required>
-              <input type="email" placeholder="Email address" class="w-full border p-2 rounded" required>
-              <input type="text" placeholder="Phone number" class="w-full border p-2 rounded">
-              <input type="date" placeholder="Date of birth" class="w-full border p-2 rounded">
-              <input type="text" placeholder="Gender" class="w-full border p-2 rounded">
-              <input type="text" placeholder="City" class="w-full border p-2 rounded">
-              <input type="text" placeholder="State" class="w-full border p-2 rounded">
-              <input type="text" placeholder="Country" class="w-full border p-2 rounded">
-              <input type="text" placeholder="Address" class="w-full border p-2 rounded">
-              <input type="text" placeholder="Message" class="w-full border p-2 rounded">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Full Name -->
+                <div class="flex flex-col">
+                    <label class="text-gray-700 font-medium">Full Name</label>
+                    <input type="text" class="w-full border-b-2 border-gray-300 p-2 focus:outline-none focus:border-purple-600" required>
+                </div>
+        
+                <!-- Email Address -->
+                <div class="flex flex-col">
+                    <label class="text-gray-700 font-medium">Email Address</label>
+                    <input type="email" class="w-full border-b-2 border-gray-300 p-2 focus:outline-none focus:border-purple-600" required>
+                </div>
+        
+                <!-- Phone Number -->
+                <div class="flex flex-col">
+                    <label class="text-gray-700 font-medium">Phone Number</label>
+                    <input type="text" class="w-full border-b-2 border-gray-300 p-2 focus:outline-none focus:border-purple-600">
+                </div>
+        
+                <!-- Date of Birth -->
+                <div class="flex flex-col">
+                    <label class="text-gray-700 font-medium">Date of Birth</label>
+                    <input type="date" class="w-full border-b-2 border-gray-300 p-2 focus:outline-none focus:border-purple-600">
+                </div>
+        
+                <!-- Gender -->
+                <div class="flex flex-col">
+                    <label class="text-gray-700 font-medium">Gender</label>
+                    <input type="text" class="w-full border-b-2 border-gray-300 p-2 focus:outline-none focus:border-purple-600">
+                </div>
+        
+                <!-- City -->
+                <div class="flex flex-col">
+                    <label class="text-gray-700 font-medium">City</label>
+                    <input type="text" class="w-full border-b-2 border-gray-300 p-2 focus:outline-none focus:border-purple-600">
+                </div>
+        
+                <!-- State -->
+                <div class="flex flex-col">
+                    <label class="text-gray-700 font-medium">State</label>
+                    <input type="text" class="w-full border-b-2 border-gray-300 p-2 focus:outline-none focus:border-purple-600">
+                </div>
+        
+                <!-- Country -->
+                <div class="flex flex-col">
+                    <label class="text-gray-700 font-medium">Country</label>
+                    <input type="text" class="w-full border-b-2 border-gray-300 p-2 focus:outline-none focus:border-purple-600">
+                </div>
+        
+                <!-- Address -->
+                <div class="flex flex-col">
+                    <label class="text-gray-700 font-medium">Address</label>
+                    <input type="text" class="w-full border-b-2 border-gray-300 p-2 focus:outline-none focus:border-purple-600">
+                </div>
+        
+                <!-- Message -->
+                <div class="flex flex-col">
+                    <label class="text-gray-700 font-medium">Message</label>
+                    <input type="text" class="w-full border-b-2 border-gray-300 p-2 focus:outline-none focus:border-purple-600">
+                </div>
             </div>
-            <div class="flex items-center space-x-4">
-              <label class="flex items-center space-x-2">
-                <input type="radio" name="counseling" class="text-purple-600" checked>
-                <span>Yes</span>
-              </label>
-              <label class="flex items-center space-x-2">
-                <input type="radio" name="counseling" class="text-purple-600">
-                <span>No</span>
-              </label>
+            <div class="flex flex-row justify-between">
+            <!-- Counseling Radio Buttons -->
+            <div class="flex flex-col items-start">
+                <span class="text-gray-700 font-medium">Request a Counseling session?</span>
+                <div class="flex flex-row gap-4">
+                <label class="flex  items-center space-x-2">
+                    <input type="radio" name="counseling" class="text-purple-600" checked>
+                    <span>Yes</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                    <input type="radio" name="counseling" class="text-purple-600">
+                    <span>No</span>
+                </label>
+              </div>
             </div>
-            <div>
-              <label class="block text-gray-700">Upload your CV/Resume</label>
-              <input type="file" class="mt-1 w-full border p-2 rounded">
+        
+            <!-- Upload CV -->
+            <div class="flex flex-col">
+                <label class="text-gray-700 font-medium">Upload your CV/Resume</label>
+                <input type="file" class="mt-1 border-b-2 border-gray-300 p-2 focus:outline-none focus:border-purple-600">
             </div>
+
+          </div>
+        
+            <!-- Terms and Conditions -->
             <div class="flex items-center space-x-2">
-              <input type="checkbox" id="terms" class="text-purple-600">
-              <label for="terms">Agree to terms and conditions</label>
+                <input type="checkbox" id="terms" class="text-purple-600">
+                <label for="terms" class="text-gray-700">Agree to terms and conditions</label>
             </div>
-            <button class="w-full bg-purple-600 text-white p-2 rounded hover:bg-purple-700">Submit Information</button>
-          </form>
+        
+            <!-- Submit Button -->
+            <button class="w-1/2 bg-[#8D448B] text-white p-3  hover:bg-purple-700 font-semibold">
+                Submit Information
+            </button>
+        </form>
+        
         </div>
       </div>
 
@@ -195,7 +260,7 @@
           </div>
 
           <!-- Subscribe section -->
-          <div class="flex flex-col gap-4 justify-center items-center">
+          <div class="flex flex-col gap-4 justify-center items-center mb-10">
             <h1 class="text-4xl text-center mt-12 font-semibold">
               Subscribe to Our Newsletter for <br /> Design Insights
             </h1>
@@ -203,19 +268,121 @@
               Be the first to discover trends, inspirations, and special offers as we
               bring the world of design directly to your inbox.
             </p>
-            <div class="flex items-center w-full max-w-lg bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="flex items-center w-full max-w-lg bg-white  shadow-md overflow-hidden">
+              <img src="/public/images/email1.png" class="w-3 h-3 ml-2" /> 
               <input type="email" placeholder="Enter your email address"
-                class="flex-1 px-4 py-3 border-none outline-none text-gray-700" />
-              <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 font-medium">
+                class="flex-1 px-4 py-3 border-none outline-none text-gray-700">
+                </input>
+              <button class="bg-[#8D448B] hover:bg-purple-700 text-white px-6 py-3 font-medium">
                 Subscribe
               </button>
             </div>
           </div>
 
+
+
         </div>
 
 
+
+
       </div>
+
+      <!--Other features and footer-->
+      <div class="flex flex-col min-h-screen">
+        <div class="relative bg-gray-100 flex flex-col items-center ">
+          <section class="text-center py-12">
+            <h3 class="text-purple-600 font-semibold">Quality Features</h3>
+            <h2 class="text-2xl font-bold text-gray-900 mt-2">Tutorials that people love most</h2>
+          </section>
+
+          <div class="container max-w-4xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 ">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="/public/images/one.png" alt="Tutorial Image" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="font-semibold text-lg">How to work with prototype design with adobe xd featuring tools</h3>
+                <p class="text-gray-500 text-sm mt-2 flex items-center"><span class="mr-2">💬</span> 22 Comments</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="/public/images/two.png" alt="Tutorial Image" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="font-semibold text-lg">Create multiple artboard by using figma prototyping development</h3>
+                <p class="text-gray-500 text-sm mt-2 flex items-center"><span class="mr-2">💬</span> 15 Comments</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src="/public/images/three.png" alt="Tutorial Image" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="font-semibold text-lg">Convert your web layout theming easily with sketch zeplin extension
+                </h3>
+                <p class="text-gray-500 text-sm mt-2 flex items-center"><span class="mr-2">💬</span> 18 Comments</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Overlapping Middle Section -->
+          <div
+            class="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 w-11/12 md:w-3/4 lg:w-2/3 bg-[#8D448B] flex flex-row py-2 px-10 items-center rounded-lg justify-around gap-4 text-center shadow-lg">
+            <h2 class="text-2xl text-[#ffff] font-bold text-start">
+              Hire the world’s best developers <br /> and designers around!
+            </h2>
+
+            <img src="/public/images/arrow.png" class="w-40" />
+
+            <div class="flex flex-col items-center">
+              <svg width="73" height="20" class="mt-2" viewBox="0 0 73 26" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                  <rect x="2.4718" y="7.89209" width="22.0884" height="3.6814" rx="1.8407"
+                    transform="rotate(42.1773 2.4718 7.89209)" fill="white" />
+                  <rect x="53.7491" y="22.7236" width="22.0884" height="3.6814" rx="1.8407"
+                    transform="rotate(-42.18 53.7491 22.7236)" fill="white" />
+                  <rect x="39.0001" width="23" height="3" rx="1.5" transform="rotate(90 39.0001 0)" fill="white" />
+                </g>
+              </svg>
+
+              <button class="mt-2 bg-white text-purple-700 px-6 py-2 rounded-lg font-semibold shadow-md">
+                HIRE DEVELOPERS
+              </button>
+
+              <svg width="74" height="20" class="mb-2" viewBox="0 0 74 27" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                  <rect width="22.3383" height="3.72305" rx="1.86152"
+                    transform="matrix(0.741071 -0.671427 -0.671427 -0.741071 3.0896 18.6143)" fill="white" />
+                  <rect width="22.3383" height="3.72305" rx="1.86152"
+                    transform="matrix(0.741039 0.671462 0.671462 -0.741039 54.947 3.61523)" fill="white" />
+                  <rect width="23.2602" height="3.03394" rx="1.51697" transform="matrix(0 -1 -1 0 40.0311 26.5957)"
+                    fill="white" />
+                </g>
+              </svg>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="bg-white text-gray-500 text-sm py-14 mt-8  flex flex-row gap-20 justify-center ">
+          <div class="flex flex-row gap-2">
+            <img src="/public/images/logo.png" class="w-4" />
+            <p class="font-semibold text-gray-900">StartupLanding</p>
+            <p class="pr-20">Copyright by 2025 Srinjoy, Inc</p>
+          </div>
+          <div class="space-x-2">
+            <a href="#" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">Advertise</a>
+            <a href="#" class="hover:underline">Supports</a>
+            <a href="#" class="hover:underline">Marketing</a>
+            <a href="#" class="hover:underline">FAQ</a>
+          </div>
+        </footer>
+      </div>
+
+
+
+
 
     </div>
 </body>
