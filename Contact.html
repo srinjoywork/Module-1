@@ -14,7 +14,8 @@
 <body>
   <div class="w-full ">
     <div class="max-w-7xl w-full mb-8 mx-auto">
-    <div  class="max-w-7xl w-full  mb-8 mx-auto px-6 py-4 lg:w-full lg:gap-[7.13rem] md:w-full md:gap-[5.31rem] sm:gap-[3.56rem] bg-[#F6F8FB]">
+      <div
+        class="max-w-7xl w-full  mb-8 mx-auto px-6 py-4 lg:w-full lg:gap-[7.13rem] md:w-full md:gap-[5.31rem] sm:gap-[3.56rem] bg-[#F6F8FB]">
         <!-- Header -->
         <header class="flex justify-around items-center py-4">
           <!-- Logo -->
@@ -102,41 +103,41 @@
       <!--Tailwind form -->
       <div class="bg-gray-100 flex flex-col p-8 items-center justify-center min-h-screen">
         <h2 class="text-2xl font-bold text-center mb-6">Get in touch with us.</h2>
-            <p class="text-center text-gray-600 mb-6">We're here to assist you.</p>
+        <p class="text-center text-gray-600 mb-6">We're here to assist you.</p>
         <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl">
-            <form class="space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" placeholder="Full name" class="w-full border p-2 rounded" required>
-                    <input type="email" placeholder="Email address" class="w-full border p-2 rounded" required>
-                    <input type="text" placeholder="Phone number" class="w-full border p-2 rounded">
-                    <input type="date" placeholder="Date of birth" class="w-full border p-2 rounded">
-                    <input type="text" placeholder="Gender" class="w-full border p-2 rounded">
-                    <input type="text" placeholder="City" class="w-full border p-2 rounded">
-                    <input type="text" placeholder="State" class="w-full border p-2 rounded">
-                    <input type="text" placeholder="Country" class="w-full border p-2 rounded">
-                    <input type="text" placeholder="Address" class="w-full border p-2 rounded">
-                    <input type="text" placeholder="Message" class="w-full border p-2 rounded">
-                </div>
-                <div class="flex items-center space-x-4">
-                    <label class="flex items-center space-x-2">
-                        <input type="radio" name="counseling" class="text-purple-600" checked>
-                        <span>Yes</span>
-                    </label>
-                    <label class="flex items-center space-x-2">
-                        <input type="radio" name="counseling" class="text-purple-600">
-                        <span>No</span>
-                    </label>
-                </div>
-                <div>
-                    <label class="block text-gray-700">Upload your CV/Resume</label>
-                    <input type="file" class="mt-1 w-full border p-2 rounded">
-                </div>
-                <div class="flex items-center space-x-2">
-                    <input type="checkbox" id="terms" class="text-purple-600">
-                    <label for="terms">Agree to terms and conditions</label>
-                </div>
-                <button class="w-full bg-purple-600 text-white p-2 rounded hover:bg-purple-700">Submit Information</button>
-            </form>
+          <form class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Full name" class="w-full border p-2 rounded" required>
+              <input type="email" placeholder="Email address" class="w-full border p-2 rounded" required>
+              <input type="text" placeholder="Phone number" class="w-full border p-2 rounded">
+              <input type="date" placeholder="Date of birth" class="w-full border p-2 rounded">
+              <input type="text" placeholder="Gender" class="w-full border p-2 rounded">
+              <input type="text" placeholder="City" class="w-full border p-2 rounded">
+              <input type="text" placeholder="State" class="w-full border p-2 rounded">
+              <input type="text" placeholder="Country" class="w-full border p-2 rounded">
+              <input type="text" placeholder="Address" class="w-full border p-2 rounded">
+              <input type="text" placeholder="Message" class="w-full border p-2 rounded">
+            </div>
+            <div class="flex items-center space-x-4">
+              <label class="flex items-center space-x-2">
+                <input type="radio" name="counseling" class="text-purple-600" checked>
+                <span>Yes</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="radio" name="counseling" class="text-purple-600">
+                <span>No</span>
+              </label>
+            </div>
+            <div>
+              <label class="block text-gray-700">Upload your CV/Resume</label>
+              <input type="file" class="mt-1 w-full border p-2 rounded">
+            </div>
+            <div class="flex items-center space-x-2">
+              <input type="checkbox" id="terms" class="text-purple-600">
+              <label for="terms">Agree to terms and conditions</label>
+            </div>
+            <button class="w-full bg-purple-600 text-white p-2 rounded hover:bg-purple-700">Submit Information</button>
+          </form>
         </div>
       </div>
 
@@ -145,53 +146,75 @@
       <div class="bg-white flex items-center justify-center min-h-screen p-4 mt-12 ">
 
         <div class="w-full max-w-2xl ">
-            
-            <!-- Map Image -->
-            <div class="w-full aspect-video">
-                <img src="/public/images/map.png" alt="Map Location" class="w-full h-full object-cover">
+
+          <!-- Map Image -->
+          <div class="w-full aspect-video">
+            <img src="/public/images/map.png" alt="Map Location" class="w-full h-full object-cover">
+          </div>
+
+          <!-- FAQ Section -->
+          <div class="p-6">
+            <h2 class="text-sm font-semibold text-center">Do you have any question</h2>
+            <p class="text-gray-600 text-xs text-center mt-2 mb-14">Our support team is ready to help you, please
+              contact with them</p>
+
+            <ul class="mt-4 space-y-4">
+              <li class="border-b pb-3 flex flex-row items-center gap-2">
+                <img src="/public/images/plus.png" class="w-3 h-3">
+                <span class="text-black font-small">How to contact with riders emergency ?</span>
+              </li>
+              <li class="border-b pb-3 flex flex-row items-center gap-2">
+                <img src="/public/images/plus.png" class="w-3 h-3">
+                <span class="text-black font-small">App installation failed, how to update system information?</span>
+              </li>
+              <li class="border-b pb-3" x-data="{ open: false }">
+                <div class="flex flex-row items-center gap-2 cursor-pointer" @click="open = !open">
+                  <!-- Toggle Icon -->
+                  <img :src="open ? '/public/images/minus.png' : '/public/images/plus.png'" class="w-3 h-3">
+                  <!-- Question Text -->
+                  <span class="text-black font-small">Website response taking time, how to improve?</span>
+                </div>
+
+                <!-- Answer Section -->
+                <div x-show="open" class="mt-2">
+                  <p class="text-gray-500 text-sm">
+                    Get your blood tests delivered at the home collect a sample from management news. Get your blood
+                    tests delivered at the home collect a sample from management news. Get your blood tests delivered at
+                    the home collect a sample from management news. Get your blood tests delivered at the home.
+                  </p>
+                </div>
+              </li>
+
+
+
+              <li class="flex flex-row items-center gap-2">
+                <img src="/public/images/plus.png" class="w-3 h-3">
+                <span class="text-black font-small">New update fixed all bug and issues</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Subscribe section -->
+          <div class="flex flex-col gap-4 justify-center items-center">
+            <h1 class="text-4xl text-center mt-12 font-semibold">
+              Subscribe to Our Newsletter for <br /> Design Insights
+            </h1>
+            <p class="text-center text-sm max-w-[770px]">
+              Be the first to discover trends, inspirations, and special offers as we
+              bring the world of design directly to your inbox.
+            </p>
+            <div class="flex items-center w-full max-w-lg bg-white rounded-lg shadow-md overflow-hidden">
+              <input type="email" placeholder="Enter your email address"
+                class="flex-1 px-4 py-3 border-none outline-none text-gray-700" />
+              <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 font-medium">
+                Subscribe
+              </button>
             </div>
-    
-            <!-- FAQ Section -->
-            <div class="p-6">
-                <h2 class="text-sm font-semibold text-center">Do you have any question</h2>
-                <p class="text-gray-600 text-xs text-center mt-2 mb-14">Our support team is ready to help you, please contact with them</p>
-                
-                <ul class="mt-4 space-y-4">
-                    <li class="border-b pb-3 flex flex-row items-center gap-2">
-                      <img src="/public/images/plus.png" class="w-3 h-3" >
-                        <span class="text-black font-small">How to contact with riders emergency ?</span>
-                    </li>
-                    <li class="border-b pb-3 flex flex-row items-center gap-2">
-                      <img src="/public/images/plus.png" class="w-3 h-3" >
-                        <span class="text-black font-small">App installation failed, how to update system information?</span>
-                    </li>
-                    <li class="border-b pb-3" x-data="{ open: false }">
-                      <div class="flex flex-row items-center gap-2 cursor-pointer" @click="open = !open">
-                          <!-- Toggle Icon -->
-                          <img :src="open ? '/public/images/minus.png' : '/public/images/plus.png'" class="w-3 h-3">
-                          <!-- Question Text -->
-                          <span class="text-black font-small">Website response taking time, how to improve?</span>
-                      </div>
-                  
-                      <!-- Answer Section -->
-                      <div x-show="open" class="mt-2">
-                          <p class="text-gray-500 text-sm">
-                              Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.
-                          </p>
-                      </div>
-                  </li>
-                  
-                      
-                    
-                    <li class="flex flex-row items-center gap-2">
-                      <img src="/public/images/plus.png" class="w-3 h-3" >
-                        <span class="text-black font-small">New update fixed all bug and issues</span>
-                    </li>
-                </ul>
-            </div>
-          </div>   
-        
-    
+          </div>
+
+        </div>
+
+
       </div>
 
     </div>
