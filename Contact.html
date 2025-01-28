@@ -1,90 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <div class="w-full bg-white-a700">
-      <div
-        class=" max-w-7xl w-full  mb-8 mx-auto px-6 py-4 lg:w-full lg:gap-[7.13rem] md:w-full md:gap-[5.31rem] sm:gap-[3.56rem] bg-[#F6F8FB]"
-      >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+
+<body>
+  <div class="w-full ">
+    <div class="max-w-7xl w-full mb-8 mx-auto">
+    <div  class="max-w-7xl w-full  mb-8 mx-auto px-6 py-4 lg:w-full lg:gap-[7.13rem] md:w-full md:gap-[5.31rem] sm:gap-[3.56rem] bg-[#F6F8FB]">
         <!-- Header -->
         <header class="flex justify-around items-center py-4">
           <!-- Logo -->
-          <img
-            src="public/images/img_header_logo.png"
-            alt="Header Logo"
-            class="h-10"
-          />
+          <img src="public/images/img_header_logo.png" alt="Header Logo" class="h-10" />
 
           <!-- Navigation -->
           <nav class="hidden md:flex space-x-6">
             <a href="#" class="text-gray-700 hover:text-purple-600">Home</a>
             <div class="relative group">
-              <a
-                href="#"
-                class="text-gray-700 hover:text-purple-600 flex items-center gap-1"
-                >Advertise <span>▼</span></a
-              >
-              <ul
-                class="absolute left-0 hidden bg-white shadow-md group-hover:block mt-2 w-40"
-              >
+              <a href="#" class="text-gray-700 hover:text-purple-600 flex items-center gap-1">Advertise
+                <span>▼</span></a>
+              <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block mt-2 w-40">
                 <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
-                    >Option 1</a
-                  >
+                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 1</a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
-                    >Option 2</a
-                  >
+                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 2</a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
-                    >Option 3</a
-                  >
+                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 3</a>
                 </li>
               </ul>
             </div>
             <div class="relative group">
-              <a
-                href="#"
-                class="text-gray-700 hover:text-purple-600 flex items-center gap-1"
-                >Support <span>▼</span></a
-              >
-              <ul
-                class="absolute left-0 hidden bg-white shadow-md group-hover:block mt-2 w-40"
-              >
+              <a href="#" class="text-gray-700 hover:text-purple-600 flex items-center gap-1">Support <span>▼</span></a>
+              <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block mt-2 w-40">
                 <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
-                    >FAQ</a
-                  >
+                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">FAQ</a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
-                    >Contact Support</a
-                  >
+                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Contact Support</a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
-                    >Live Chat</a
-                  >
+                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Live Chat</a>
                 </li>
               </ul>
             </div>
@@ -94,48 +58,143 @@
 
           <!-- Register Button -->
           <button
-            class="hidden md:block px-5 py-2 border-2 border-purple-600 text-purple-600 font-bold  hover:bg-purple-600 hover:text-white"
-          >
+            class="hidden md:block px-5 py-2 border-2 border-purple-600 text-purple-600 font-bold  hover:bg-purple-600 hover:text-white">
             Register Now
           </button>
         </header>
       </div>
 
-        <!--Contact Us page-->
-        <div class="flex flex-col items-start  justify-start  mt-8 mx-16 bg-white">
-            
-              <h1 class="text-4xl text-gray-700 text-start mb-16 mx-14">_____ Contact Us</h1>
-            
+      <!--Contact Us page-->
+      <div class="flex flex-col items-start  justify-start pb-6 mt-8 mx-16 bg-white">
 
+        <h1 class="text-4xl text-gray-700 text-start mb-16 mx-14">_____ Contact Us</h1>
+
+
+
+        <ul class="mx-14 flex flex-row items-center  justify-center px-6 gap-20">
+          <li class="flex flex-row items-center gap-2 mr-12">
+            <img src="/public/images/address.png" class="w-10 h-10" />
+            <div class="flex flex-col">
+              <h1 class="font-semibold">Address</h1>
+              <p>Jaipur, Rajasthan, INDIA<br>Pin 342087</p>
+            </div>
+          </li>
+
+          <li class="flex flex-row items-center gap-2 mr-12">
+            <img src="/public/images/call.png" class="w-10 h-10" />
+            <div class="flex flex-col">
+              <h1 class="font-semibold">Call Us</h1>
+              <p>+91 9876543210</p>
+            </div>
+          </li>
+
+          <li class="flex flex-row items-center gap-2">
+            <img src="/public/images/email.png" class="w-10 h-10" />
+            <div class="flex flex-col">
+              <h1 class="font-semibold">Email Us</h1>
+              <p>info@test.com</p>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+      <!--Tailwind form -->
+      <div class="bg-gray-100 flex flex-col p-8 items-center justify-center min-h-screen">
+        <h2 class="text-2xl font-bold text-center mb-6">Get in touch with us.</h2>
+            <p class="text-center text-gray-600 mb-6">We're here to assist you.</p>
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl">
+            <form class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Full name" class="w-full border p-2 rounded" required>
+                    <input type="email" placeholder="Email address" class="w-full border p-2 rounded" required>
+                    <input type="text" placeholder="Phone number" class="w-full border p-2 rounded">
+                    <input type="date" placeholder="Date of birth" class="w-full border p-2 rounded">
+                    <input type="text" placeholder="Gender" class="w-full border p-2 rounded">
+                    <input type="text" placeholder="City" class="w-full border p-2 rounded">
+                    <input type="text" placeholder="State" class="w-full border p-2 rounded">
+                    <input type="text" placeholder="Country" class="w-full border p-2 rounded">
+                    <input type="text" placeholder="Address" class="w-full border p-2 rounded">
+                    <input type="text" placeholder="Message" class="w-full border p-2 rounded">
+                </div>
+                <div class="flex items-center space-x-4">
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="counseling" class="text-purple-600" checked>
+                        <span>Yes</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="counseling" class="text-purple-600">
+                        <span>No</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="block text-gray-700">Upload your CV/Resume</label>
+                    <input type="file" class="mt-1 w-full border p-2 rounded">
+                </div>
+                <div class="flex items-center space-x-2">
+                    <input type="checkbox" id="terms" class="text-purple-600">
+                    <label for="terms">Agree to terms and conditions</label>
+                </div>
+                <button class="w-full bg-purple-600 text-white p-2 rounded hover:bg-purple-700">Submit Information</button>
+            </form>
+        </div>
+      </div>
+
+
+      <!--Map-->
+      <div class="bg-white flex items-center justify-center min-h-screen p-4 mt-12 ">
+
+        <div class="w-full max-w-2xl ">
             
-              <ul class="mx-14 flex flex-row items-center  justify-center px-6 gap-20">
-                  <li class="flex flex-row items-center gap-2 mr-12">
-                      <img src="/public/images/address.png" class="w-10 h-10"/>
-                      <div class="flex flex-col">
-                          <h1 class="font-semibold">Address</h1>
-                          <p>Jaipur, Rajasthan, INDIA<br>Pin 342087</p>
+            <!-- Map Image -->
+            <div class="w-full aspect-video">
+                <img src="/public/images/map.png" alt="Map Location" class="w-full h-full object-cover">
+            </div>
+    
+            <!-- FAQ Section -->
+            <div class="p-6">
+                <h2 class="text-sm font-semibold text-center">Do you have any question</h2>
+                <p class="text-gray-600 text-xs text-center mt-2 mb-14">Our support team is ready to help you, please contact with them</p>
+                
+                <ul class="mt-4 space-y-4">
+                    <li class="border-b pb-3 flex flex-row items-center gap-2">
+                      <img src="/public/images/plus.png" class="w-3 h-3" >
+                        <span class="text-black font-small">How to contact with riders emergency ?</span>
+                    </li>
+                    <li class="border-b pb-3 flex flex-row items-center gap-2">
+                      <img src="/public/images/plus.png" class="w-3 h-3" >
+                        <span class="text-black font-small">App installation failed, how to update system information?</span>
+                    </li>
+                    <li class="border-b pb-3" x-data="{ open: false }">
+                      <div class="flex flex-row items-center gap-2 cursor-pointer" @click="open = !open">
+                          <!-- Toggle Icon -->
+                          <img :src="open ? '/public/images/minus.png' : '/public/images/plus.png'" class="w-3 h-3">
+                          <!-- Question Text -->
+                          <span class="text-black font-small">Website response taking time, how to improve?</span>
+                      </div>
+                  
+                      <!-- Answer Section -->
+                      <div x-show="open" class="mt-2">
+                          <p class="text-gray-500 text-sm">
+                              Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.
+                          </p>
                       </div>
                   </li>
-          
-                  <li class="flex flex-row items-center gap-2 mr-12">
-                      <img src="/public/images/call.png" class="w-10 h-10"/>
-                      <div class="flex flex-col">
-                          <h1 class="font-semibold">Call Us</h1>
-                          <p>+91 9876543210</p>
-                      </div>
-                  </li>
-          
-                  <li class="flex flex-row items-center gap-2">
-                      <img src="/public/images/email.png" class="w-10 h-10"/>
-                      <div class="flex flex-col">
-                          <h1 class="font-semibold">Email Us</h1>
-                          <p>info@test.com</p>
-                      </div>
-                  </li>
-              </ul>
-            
-          
-      
+                  
+                      
+                    
+                    <li class="flex flex-row items-center gap-2">
+                      <img src="/public/images/plus.png" class="w-3 h-3" >
+                        <span class="text-black font-small">New update fixed all bug and issues</span>
+                    </li>
+                </ul>
+            </div>
+          </div>   
+        
+    
+      </div>
+
     </div>
-  </body>
+</body>
+
 </html>
