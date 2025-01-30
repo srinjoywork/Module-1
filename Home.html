@@ -10,12 +10,13 @@
 
 <body>
     <div class="w-full bg-white-a700">
-        <div class="max-w-7xl w-full mb-8 mx-auto px-6 py-2 lg:w-full lg:gap-[7.13rem] md:w-full md:gap-[5.31rem] sm:gap-[3.56rem] bg-[#F6F8FB]">
+        <div
+            class="max-w-7xl w-full mb-8 mx-auto px-6 py-2 lg:w-full lg:gap-[7.13rem] md:w-full md:gap-[5.31rem] sm:gap-[3.56rem] bg-[#F6F8FB]">
             <!-- Header -->
             <header class="flex justify-between items-center pb-14">
                 <!-- Logo -->
                 <img src="public/images/img_header_logo.png" alt="Header Logo" class="h-10">
-        
+
                 <!-- Navigation for Desktop -->
                 <nav class="hidden md:flex space-x-6">
                     <a href="/Home.html" class="text-gray-700 hover:text-purple-600">Home</a>
@@ -33,38 +34,46 @@
                             <span>▼</span></a>
                         <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block mt-2 w-40">
                             <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">FAQ</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Contact Support</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Contact Support</a>
+                            </li>
                             <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Live Chat</a></li>
                         </ul>
                     </div>
                     <a href="/Contact.html" class="text-gray-700 hover:text-purple-600">Contact</a>
                     <a href="#" class="text-gray-700 hover:text-purple-600">About Us</a>
                 </nav>
-        
+
                 <!-- Register Button for Desktop -->
-                <button class="hidden md:block px-5 py-2 border-2 border-purple-600 text-purple-600 font-bold hover:bg-purple-600 hover:text-white">
+                <button
+                    class="hidden md:block px-5 py-2 border-2 border-purple-600 text-purple-600 font-bold hover:bg-purple-600 hover:text-white">
                     Register Now
                 </button>
-        
+
                 <!-- Hamburger Menu Button for Mobile -->
                 <button id="menu-toggle" class="md:hidden focus:outline-none">
-                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
-        
+
                 <!-- Mobile Menu (Hidden by default) -->
-                <div id="mobile-menu" class="fixed inset-0 bg-white transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center space-y-6 pt-20 shadow-lg">
+                <div id="mobile-menu"
+                    class="fixed inset-0 bg-white transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center space-y-6 pt-20 shadow-lg">
                     <button id="close-menu" class="absolute top-5 right-5">
-                        <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
                     <a href="/Home.html" class="text-gray-700 text-lg hover:text-purple-600">Home</a>
-        
+
                     <!-- Mobile Advertise Dropdown -->
                     <div class="w-full text-center">
-                        <button id="advertise-toggle" class="w-full text-gray-700 text-lg hover:text-purple-600 flex justify-center items-center gap-1">
+                        <button id="advertise-toggle"
+                            class="w-full text-gray-700 text-lg hover:text-purple-600 flex justify-center items-center gap-1">
                             Advertise <span>▼</span>
                         </button>
                         <div id="advertise-menu" class="hidden flex flex-col space-y-2 mt-2">
@@ -73,10 +82,11 @@
                             <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 3</a>
                         </div>
                     </div>
-        
+
                     <!-- Mobile Support Dropdown -->
                     <div class="w-full text-center">
-                        <button id="support-toggle" class="w-full text-gray-700 text-lg hover:text-purple-600 flex justify-center items-center gap-1">
+                        <button id="support-toggle"
+                            class="w-full text-gray-700 text-lg hover:text-purple-600 flex justify-center items-center gap-1">
                             Support <span>▼</span>
                         </button>
                         <div id="support-menu" class="hidden flex flex-col space-y-2 mt-2">
@@ -85,86 +95,89 @@
                             <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Live Chat</a>
                         </div>
                     </div>
-        
+
                     <a href="/Contact.html" class="text-gray-700 text-lg hover:text-purple-600">Contact</a>
                     <a href="#" class="text-gray-700 text-lg hover:text-purple-600">About Us</a>
-                    <button class="px-5 py-2 border-2 border-purple-600 text-purple-600 font-bold hover:bg-purple-600 hover:text-white">
+                    <button
+                        class="px-5 py-2 border-2 border-purple-600 text-purple-600 font-bold hover:bg-purple-600 hover:text-white">
                         Register Now
                     </button>
                 </div>
             </header>
-       
-        
-        <!-- JavaScript for Mobile Menu and Dropdown Toggle -->
-        <script>
-            const menuToggle = document.getElementById('menu-toggle');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const closeMenu = document.getElementById('close-menu');
-        
-            const advertiseToggle = document.getElementById('advertise-toggle');
-            const advertiseMenu = document.getElementById('advertise-menu');
-            
-            const supportToggle = document.getElementById('support-toggle');
-            const supportMenu = document.getElementById('support-menu');
-        
-            // Open mobile menu
-            menuToggle.addEventListener('click', () => {
-                mobileMenu.classList.remove('translate-x-full');
-            });
-        
-            // Close mobile menu
-            closeMenu.addEventListener('click', () => {
-                mobileMenu.classList.add('translate-x-full');
-            });
-        
-            // Toggle Advertise dropdown
-            advertiseToggle.addEventListener('click', () => {
-                advertiseMenu.classList.toggle('hidden');
-            });
-        
-            // Toggle Support dropdown
-            supportToggle.addEventListener('click', () => {
-                supportMenu.classList.toggle('hidden');
-            });
-        </script>
-        
-        
+
+
+            <!-- JavaScript for Mobile Menu and Dropdown Toggle -->
+            <script>
+                const menuToggle = document.getElementById('menu-toggle');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const closeMenu = document.getElementById('close-menu');
+
+                const advertiseToggle = document.getElementById('advertise-toggle');
+                const advertiseMenu = document.getElementById('advertise-menu');
+
+                const supportToggle = document.getElementById('support-toggle');
+                const supportMenu = document.getElementById('support-menu');
+
+                // Open mobile menu
+                menuToggle.addEventListener('click', () => {
+                    mobileMenu.classList.remove('translate-x-full');
+                });
+
+                // Close mobile menu
+                closeMenu.addEventListener('click', () => {
+                    mobileMenu.classList.add('translate-x-full');
+                });
+
+                // Toggle Advertise dropdown
+                advertiseToggle.addEventListener('click', () => {
+                    advertiseMenu.classList.toggle('hidden');
+                });
+
+                // Toggle Support dropdown
+                supportToggle.addEventListener('click', () => {
+                    supportMenu.classList.toggle('hidden');
+                });
+            </script>
+
+
             <!-- Hero Section -->
-<div class="flex flex-col md:flex-row items-center justify-between pb-10 px-4 sm:px-8 md:px-0">
-    <div class="flex flex-col md:flex-col items-start md:ml-16 px-6 mt-10 gap-8 w-full md:w-1/2">
-        <div class="text-center md:text-left">
-            <h1 class="text-3xl sm:text-4xl font-bold leading-tight text-gray-900">
-                Great software is built with amazing developers
-            </h1>
-            <p class="mt-4 text-base sm:text-lg text-gray-700">
-                We help build and manage a team of world-class developers to bring your vision to life.
-            </p>
+            <div class="flex flex-col md:flex-row items-center justify-between pb-10 px-4 sm:px-8 md:px-0">
+                <div class="flex flex-col md:flex-col items-start md:ml-16 px-6 mt-10 gap-8 w-full md:w-1/2">
+                    <div class="text-center md:text-left">
+                        <h1 class="text-3xl sm:text-4xl font-bold leading-tight text-gray-900">
+                            Great software is built with amazing developers
+                        </h1>
+                        <p class="mt-4 text-base sm:text-lg text-gray-700">
+                            We help build and manage a team of world-class developers to bring your vision to life.
+                        </p>
 
-            <!-- Subscription Form -->
-            <div class="mt-6 flex flex-col sm:flex-row items-center gap-3 w-full">
-                <input type="email" placeholder="Subscribe newsletter"
-                    class="p-3 w-full sm:w-2/3 border rounded-lg">
-                <button class="bg-[#8D448B] text-white px-6 py-3 rounded-lg w-full sm:w-auto">
-                    Subscribe
-                </button>
+                        <!-- Subscription Form -->
+                        <div class="mt-6 flex flex-col sm:flex-row items-center gap-3 w-full">
+                            <input type="email" placeholder="Subscribe newsletter"
+                                class="p-3 w-full sm:w-2/3 border rounded-lg">
+                            <button class="bg-[#8D448B] text-white px-6 py-3 rounded-lg w-full sm:w-auto">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sponsors Section -->
+                    <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-[1.31rem] md:flex-row">
+                        <p class="text-md text-gray-600">Sponsored by:</p>
+                        <div class="flex gap-4 sm:gap-[1.75rem] items-center">
+                            <img src="public/images/img_paypal.png" alt="Paypal"
+                                class="h-[1.75rem] w-20 sm:w-24 object-contain">
+                            <img src="public/images/img_google.png" alt="Google"
+                                class="h-[1.75rem] w-16 sm:w-20 object-contain">
+                            <img src="public/images/img_dropbox.png" alt="Dropbox"
+                                class="h-[1.75rem] w-16 sm:w-20 object-contain">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <img src="public/images/img_img.png" alt="Hero Image" class="w-full md:w-2/6 object-cover mt-6 md:mt-0">
             </div>
-        </div>
-
-        <!-- Sponsors Section -->
-        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-[1.31rem] md:flex-row">
-            <p class="text-md text-gray-600">Sponsored by:</p>
-            <div class="flex gap-4 sm:gap-[1.75rem] items-center">
-                <img src="public/images/img_paypal.png" alt="Paypal" class="h-[1.75rem] w-20 sm:w-24 object-contain">
-                <img src="public/images/img_google.png" alt="Google" class="h-[1.75rem] w-16 sm:w-20 object-contain">
-                <img src="public/images/img_dropbox.png" alt="Dropbox" class="h-[1.75rem] w-16 sm:w-20 object-contain">
-            </div>
-        </div>
-    </div>
-
-    <!-- Hero Image -->
-    <img src="public/images/img_img.png" alt="Hero Image"
-        class="w-full md:w-2/6 object-cover mt-6 md:mt-0">
-</div>
 
         </div>
 
@@ -423,20 +436,29 @@
 
             </div>
 
-            <footer class="bg-white text-gray-500 text-sm py-10 mt-8 flex flex-col items-center gap-4 text-center">
-                <div class="flex flex-col sm:flex-row items-center gap-2">
-                    <img src="/public/images/logo.png" class="w-6" />
+            <footer class="bg-white text-gray-500 text-sm py-14 mt-8 flex flex-col md:flex-row md:items-center md:justify-center text-center gap-6 px-6">
+  
+                <!-- Left Section -->
+                <div class="flex flex-col md:flex-row items-center gap-4">
+                  <div class="flex items-center gap-2">
+                    <img src="/public/images/logo.png" class="w-5" />
                     <p class="font-semibold text-gray-900">StartupLanding</p>
+                  </div>
+                  <p class="text-xs md:text-sm">Copyright © 2025 Srinjoy, Inc</p>
                 </div>
-                <p>Copyright by 2025 Srinjoy, Inc</p>
-                <div class="flex flex-wrap justify-center space-x-4">
-                    <a href="#" class="hover:underline">Home</a>
-                    <a href="#" class="hover:underline">Advertise</a>
-                    <a href="#" class="hover:underline">Supports</a>
-                    <a href="#" class="hover:underline">Marketing</a>
-                    <a href="#" class="hover:underline">FAQ</a>
+              
+                <!-- Right Section (Links) -->
+                <div class="flex flex-wrap justify-center space-x-4 md:space-x-6">
+                  <a href="#" class="hover:underline">Home</a>
+                  <a href="#" class="hover:underline">Advertise</a>
+                  <a href="#" class="hover:underline">Support</a>
+                  <a href="#" class="hover:underline">Marketing</a>
+                  <a href="#" class="hover:underline">FAQ</a>
                 </div>
-            </footer>
+              
+              </footer>
+              
+              
 
         </div>
 
