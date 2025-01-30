@@ -10,14 +10,13 @@
 
 <body>
     <div class="w-full bg-white-a700">
-        <div
-            class=" max-w-7xl w-full  mb-8 mx-auto px-6 py-2 lg:w-full lg:gap-[7.13rem] md:w-full md:gap-[5.31rem] sm:gap-[3.56rem] bg-[#F6F8FB]">
+        <div class="max-w-7xl w-full mb-8 mx-auto px-6 py-2 lg:w-full lg:gap-[7.13rem] md:w-full md:gap-[5.31rem] sm:gap-[3.56rem] bg-[#F6F8FB]">
             <!-- Header -->
-            <header class="flex justify-around items-center pb-14">
+            <header class="flex justify-between items-center pb-14">
                 <!-- Logo -->
                 <img src="public/images/img_header_logo.png" alt="Header Logo" class="h-10">
-
-                <!-- Navigation -->
+        
+                <!-- Navigation for Desktop -->
                 <nav class="hidden md:flex space-x-6">
                     <a href="/Home.html" class="text-gray-700 hover:text-purple-600">Home</a>
                     <div class="relative group">
@@ -34,92 +33,185 @@
                             <span>▼</span></a>
                         <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block mt-2 w-40">
                             <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">FAQ</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Contact Support</a>
-                            </li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Contact Support</a></li>
                             <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Live Chat</a></li>
                         </ul>
                     </div>
                     <a href="/Contact.html" class="text-gray-700 hover:text-purple-600">Contact</a>
                     <a href="#" class="text-gray-700 hover:text-purple-600">About Us</a>
                 </nav>
-
-                <!-- Register Button -->
-                <button
-                    class="hidden md:block px-5 py-2 border-2 border-purple-600 text-purple-600 font-bold  hover:bg-purple-600 hover:text-white">Register
-                    Now</button>
-            </header>
-
-            <!-- Hero Section -->
-            <div class="flex items-center justify-between pb-10 flex-row px-4 sm:px-8 md:px-0">
-                <div class="flex flex-row md:flex-col items-start ml-16 px-6 mt-10 gap-8">
-                    <div class="md:w-1/2 text-center md:text-left">
-                        <h1 class="text-4xl font-bold leading-tight text-gray-900">Great software is built with amazing
-                            developers</h1>
-                        <p class="mt-4 text-lg text-gray-700">We help build and manage a team of world-class developers
-                            to bring your vision to life.</p>
-
-                        <!-- Subscription Form -->
-                        <div class="mt-6 flex flex-col sm:flex-row items-center gap-3">
-                            <input type="email" placeholder="Subscribe newsletter"
-                                class="p-3 w-full sm:w-2/3 border rounded-lg">
-                            <button class="bg-[#8D448B] text-white px-6 py-3 rounded-lg">Subscribe</button>
+        
+                <!-- Register Button for Desktop -->
+                <button class="hidden md:block px-5 py-2 border-2 border-purple-600 text-purple-600 font-bold hover:bg-purple-600 hover:text-white">
+                    Register Now
+                </button>
+        
+                <!-- Hamburger Menu Button for Mobile -->
+                <button id="menu-toggle" class="md:hidden focus:outline-none">
+                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+        
+                <!-- Mobile Menu (Hidden by default) -->
+                <div id="mobile-menu" class="fixed inset-0 bg-white transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center space-y-6 pt-20 shadow-lg">
+                    <button id="close-menu" class="absolute top-5 right-5">
+                        <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <a href="/Home.html" class="text-gray-700 text-lg hover:text-purple-600">Home</a>
+        
+                    <!-- Mobile Advertise Dropdown -->
+                    <div class="w-full text-center">
+                        <button id="advertise-toggle" class="w-full text-gray-700 text-lg hover:text-purple-600 flex justify-center items-center gap-1">
+                            Advertise <span>▼</span>
+                        </button>
+                        <div id="advertise-menu" class="hidden flex flex-col space-y-2 mt-2">
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 1</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 2</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 3</a>
                         </div>
                     </div>
-                    <!-- Sponsors Section -->
-                    <div class="flex items-start gap-[1.31rem] md:flex-row">
-                        <p class="size-textmd text ui !text-blue_gray-600_99">Sponsored by:</p>
-                        <div class="flex gap-[1.75rem] self-center md:mr-0 sm:flex-row">
-                            <img src="public/images/img_paypal.png" alt="Paypal"
-                                class="h-[1.75rem] w-[32%] object-contain sm:w-full" />
-                            <img src="public/images/img_google.png" alt="Google"
-                                class="h-[1.75rem] w-[28%] object-contain sm:w-full" />
-                            <img src="public/images/img_dropbox.png" alt="Dropbox"
-                                class="h-[1.75rem] w-[28%] object-contain sm:w-full" />
+        
+                    <!-- Mobile Support Dropdown -->
+                    <div class="w-full text-center">
+                        <button id="support-toggle" class="w-full text-gray-700 text-lg hover:text-purple-600 flex justify-center items-center gap-1">
+                            Support <span>▼</span>
+                        </button>
+                        <div id="support-menu" class="hidden flex flex-col space-y-2 mt-2">
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">FAQ</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Contact Support</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Live Chat</a>
                         </div>
                     </div>
+        
+                    <a href="/Contact.html" class="text-gray-700 text-lg hover:text-purple-600">Contact</a>
+                    <a href="#" class="text-gray-700 text-lg hover:text-purple-600">About Us</a>
+                    <button class="px-5 py-2 border-2 border-purple-600 text-purple-600 font-bold hover:bg-purple-600 hover:text-white">
+                        Register Now
+                    </button>
                 </div>
+            </header>
+       
+        
+        <!-- JavaScript for Mobile Menu and Dropdown Toggle -->
+        <script>
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeMenu = document.getElementById('close-menu');
+        
+            const advertiseToggle = document.getElementById('advertise-toggle');
+            const advertiseMenu = document.getElementById('advertise-menu');
+            
+            const supportToggle = document.getElementById('support-toggle');
+            const supportMenu = document.getElementById('support-menu');
+        
+            // Open mobile menu
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-full');
+            });
+        
+            // Close mobile menu
+            closeMenu.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
+        
+            // Toggle Advertise dropdown
+            advertiseToggle.addEventListener('click', () => {
+                advertiseMenu.classList.toggle('hidden');
+            });
+        
+            // Toggle Support dropdown
+            supportToggle.addEventListener('click', () => {
+                supportMenu.classList.toggle('hidden');
+            });
+        </script>
+        
+        
+            <!-- Hero Section -->
+<div class="flex flex-col md:flex-row items-center justify-between pb-10 px-4 sm:px-8 md:px-0">
+    <div class="flex flex-col md:flex-col items-start md:ml-16 px-6 mt-10 gap-8 w-full md:w-1/2">
+        <div class="text-center md:text-left">
+            <h1 class="text-3xl sm:text-4xl font-bold leading-tight text-gray-900">
+                Great software is built with amazing developers
+            </h1>
+            <p class="mt-4 text-base sm:text-lg text-gray-700">
+                We help build and manage a team of world-class developers to bring your vision to life.
+            </p>
 
-                <!-- Hero Image -->
-                <img src="public/images/img_img.png" alt="Hero Image" class="w-full md:w-2/6 object-cover">
+            <!-- Subscription Form -->
+            <div class="mt-6 flex flex-col sm:flex-row items-center gap-3 w-full">
+                <input type="email" placeholder="Subscribe newsletter"
+                    class="p-3 w-full sm:w-2/3 border rounded-lg">
+                <button class="bg-[#8D448B] text-white px-6 py-3 rounded-lg w-full sm:w-auto">
+                    Subscribe
+                </button>
             </div>
         </div>
 
-        <!--Features Section -->
+        <!-- Sponsors Section -->
+        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-[1.31rem] md:flex-row">
+            <p class="text-md text-gray-600">Sponsored by:</p>
+            <div class="flex gap-4 sm:gap-[1.75rem] items-center">
+                <img src="public/images/img_paypal.png" alt="Paypal" class="h-[1.75rem] w-20 sm:w-24 object-contain">
+                <img src="public/images/img_google.png" alt="Google" class="h-[1.75rem] w-16 sm:w-20 object-contain">
+                <img src="public/images/img_dropbox.png" alt="Dropbox" class="h-[1.75rem] w-16 sm:w-20 object-contain">
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Image -->
+    <img src="public/images/img_img.png" alt="Hero Image"
+        class="w-full md:w-2/6 object-cover mt-6 md:mt-0">
+</div>
+
+        </div>
+
+
+        <!-- Features Section -->
         <div class="flex flex-col items-center">
             <div class="text-center">
                 <h3 class="text-purple-600 font-semibold">Quality Features</h3>
                 <h1 class="text-2xl font-bold">Meet exciting features of the app</h1>
             </div>
-            <div class="flex flex-row justify-center gap-[4rem] w-full mt-8 mb-8">
+            <div class="flex flex-wrap justify-center gap-8 w-full mt-8 mb-8">
+                <!-- Feature 1 -->
                 <div class="flex flex-col items-center text-center">
-                    <img src="public/images/first.png" alt="Unlimited Customization" class="w-16 h-16" />
-                    <h1 class="text-lg font-semibold mt-2">Unlimited Customization</h1>
-                    <p class="text-gray-600 w-40 h-20">Get your blood tests delivered at home. Collect a sample from
-                        your blood tests.</p>
+                    <img src="public/images/first.png" alt="Unlimited Customization"
+                        class="w-16 h-16 sm:w-12 sm:h-12" />
+                    <h1 class="text-lg font-semibold mt-2 text-base sm:text-sm">Unlimited Customization</h1>
+                    <p class="text-gray-600 w-40 h-20 text-sm sm:w-32 sm:h-16">Get your blood tests delivered at home.
+                        Collect a sample from your blood tests.</p>
                 </div>
 
+                <!-- Feature 2 -->
                 <div class="flex flex-col items-center text-center">
-                    <img src="public/images/vector.png" alt="Vector Shape & Resizable" class="w-16 h-16" />
-                    <h1 class="text-lg font-semibold mt-2">Vector Shape & Resizable</h1>
-                    <p class="text-gray-600 w-40 h-20 ">Get your blood tests delivered at home. Collect a sample from
-                        your blood tests.</p>
+                    <img src="public/images/vector.png" alt="Vector Shape & Resizable"
+                        class="w-16 h-16 sm:w-12 sm:h-12" />
+                    <h1 class="text-lg font-semibold mt-2 text-base sm:text-sm">Vector Shape & Resizable</h1>
+                    <p class="text-gray-600 w-40 h-20 text-sm sm:w-32 sm:h-16">Get your blood tests delivered at home.
+                        Collect a sample from your blood tests.</p>
                 </div>
 
+                <!-- Feature 3 -->
                 <div class="flex flex-col items-center text-center">
-                    <img src="public/images/editing.png" alt="Editing Freedom" class="w-16 h-16" />
-                    <h1 class="text-lg font-semibold mt-2">Editing Freedom</h1>
-                    <p class="text-gray-600 w-40 h-20">Get your blood tests delivered at home. Collect a sample from
-                        your blood tests.</p>
+                    <img src="public/images/editing.png" alt="Editing Freedom" class="w-16 h-16 sm:w-12 sm:h-12" />
+                    <h1 class="text-lg font-semibold mt-2 text-base sm:text-sm">Editing Freedom</h1>
+                    <p class="text-gray-600 w-40 h-20 text-sm sm:w-32 sm:h-16">Get your blood tests delivered at home.
+                        Collect a sample from your blood tests.</p>
                 </div>
 
+                <!-- Feature 4 -->
                 <div class="flex flex-col items-center text-center">
-                    <img src="public/images/award.png" alt="Best Award History" class="w-16 h-16" />
-                    <h1 class="text-lg font-semibold mt-2">Best Award History</h1>
-                    <p class="text-gray-600 w-40 h-20">Get your blood tests delivered at home. Collect a sample from
-                        your blood tests.</p>
+                    <img src="public/images/award.png" alt="Best Award History" class="w-16 h-16 sm:w-12 sm:h-12" />
+                    <h1 class="text-lg font-semibold mt-2 text-base sm:text-sm">Best Award History</h1>
+                    <p class="text-gray-600 w-40 h-20 text-sm sm:w-32 sm:h-16">Get your blood tests delivered at home.
+                        Collect a sample from your blood tests.</p>
                 </div>
             </div>
         </div>
+
 
         <!--Features 1-->
 
@@ -279,19 +371,17 @@
                 </div>
 
                 <!-- Overlapping Middle Section -->
-                <div class="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 
-            w-11/12 md:w-3/4 lg:w-2/3 max-w-[900px] bg-[#8D448B] flex flex-row 
-            py-2 px-10 items-center rounded-lg justify-around gap-4 text-center 
-            shadow-lg scale-90 md:scale-100">
+                <div
+                    class="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 w-9/12 sm:w-10/12 md:w-2/3 lg:w-1/2 bg-[#8D448B] flex flex-row py-2 sm:py-3 px-3 sm:px-5 md:px-8 items-center rounded-lg justify-around gap-2 sm:gap-3 text-center shadow-lg">
 
-                    <h2 class="text-2xl text-[#ffff] font-bold text-start">
-                        Hire the world’s best developers <br /> and designers around!
+                    <h2 class="text-sm sm:text-lg md:text-xl text-white font-bold text-start">
+                        Hire the world’s best developers <br class="hidden sm:block" /> and designers around!
                     </h2>
 
-                    <img src="/public/images/arrow.png" class="w-40" />
+                    <img src="/public/images/arrow.png" class="w-16 sm:w-20 md:w-28 lg:w-32" />
 
                     <div class="flex flex-col items-center">
-                        <svg width="73" height="20" class="mt-2" viewBox="0 0 73 26" fill="none"
+                        <svg width="40" height="12" class="mt-1 hidden sm:block" viewBox="0 0 73 26" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g opacity="0.5">
                                 <rect x="2.4718" y="7.89209" width="22.0884" height="3.6814" rx="1.8407"
@@ -303,11 +393,12 @@
                             </g>
                         </svg>
 
-                        <button class="mt-2 bg-white text-purple-700 px-6 py-2 rounded-lg font-semibold shadow-md">
+                        <button
+                            class="mt-1 bg-white text-purple-700 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg font-semibold shadow-md text-xs sm:text-sm">
                             HIRE DEVELOPERS
                         </button>
 
-                        <svg width="74" height="20" class="mb-2" viewBox="0 0 74 27" fill="none"
+                        <svg width="40" height="12" class="mb-1 hidden sm:block" viewBox="0 0 74 27" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g opacity="0.5">
                                 <rect width="22.3383" height="3.72305" rx="1.86152"
@@ -324,16 +415,21 @@
                 </div>
 
 
+
+
+
+
+
+
             </div>
 
-            <!-- Footer Section -->
-            <footer class="bg-white text-gray-500 text-sm py-14 mt-8  flex flex-row gap-20 justify-center ">
-                <div class="flex flex-row gap-2">
-                    <img src="/public/images/logo.png" class="w-4" />
+            <footer class="bg-white text-gray-500 text-sm py-10 mt-8 flex flex-col items-center gap-4 text-center">
+                <div class="flex flex-col sm:flex-row items-center gap-2">
+                    <img src="/public/images/logo.png" class="w-6" />
                     <p class="font-semibold text-gray-900">StartupLanding</p>
-                    <p class="pr-20">Copyright by 2025 Srinjoy, Inc</p>
                 </div>
-                <div class="space-x-2">
+                <p>Copyright by 2025 Srinjoy, Inc</p>
+                <div class="flex flex-wrap justify-center space-x-4">
                     <a href="#" class="hover:underline">Home</a>
                     <a href="#" class="hover:underline">Advertise</a>
                     <a href="#" class="hover:underline">Supports</a>
@@ -341,6 +437,7 @@
                     <a href="#" class="hover:underline">FAQ</a>
                 </div>
             </footer>
+
         </div>
 
 
