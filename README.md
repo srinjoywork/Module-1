@@ -23,7 +23,7 @@ This project is a responsive landing page built using modern front-end technolog
   
 
 ## Live Demo
-You can check out the live version of the project here: [Live Link](https://capsitech-m1-srinjoy.netlify.app/) *(Replace # with actual URL when deployed)*
+You can check out the live version of the project here: [Live Link](https://capsitech-m1-srinjoy.netlify.app/) 
 
 ## Setup Instructions
 1. Clone the repository:
@@ -35,14 +35,6 @@ You can check out the live version of the project here: [Live Link](https://caps
    cd Module-1
    ```
 3. Open `index.html` in your browser to view the site.
-
-## Screenshots
-### Home Page
-![Home](https://github.com/user-attachments/assets/fc567859-54f8-48f9-b76f-702b8dfcaf2a)
-
-
-### Contact Page
-![Contact](https://github.com/user-attachments/assets/3a63d60e-0c63-4227-b1f6-d09d00000d25)
 
 
 ## Credits
