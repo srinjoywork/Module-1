@@ -14,90 +14,102 @@
 <body>
   <div class="w-full ">
     <div class="max-w-7xl w-full mb-8 mx-auto">
-      <div
-        class="max-w-7xl w-full  mb-8 mx-auto px-6 py-4 lg:w-full lg:gap-[7.13rem] md:w-full md:gap-[5.31rem] sm:gap-[3.56rem] bg-[#F6F8FB]">
+      <div class="max-w-7xl w-full mb-8 mx-auto px-6 py-4 bg-[#F6F8FB]">
         <!-- Header -->
-        <header class="flex justify-around items-center py-4">
+        <header class="flex justify-between items-center py-4">
           <!-- Logo -->
           <img src="public/images/img_header_logo.png" alt="Header Logo" class="h-10" />
 
+          <!-- Mobile Menu Button -->
+          <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+
           <!-- Navigation -->
-          <nav class="hidden md:flex space-x-6">
-            <a href="/Home.html" class="text-gray-700 hover:text-purple-600">Home</a>
+          <nav id="nav-menu"
+            class="hidden md:flex space-x-6 md:items-center md:static md:bg-transparent absolute top-16 left-0 w-full bg-white shadow-md md:shadow-none md:w-auto">
+            <a href="/Home.html" class="block py-2 px-4 text-gray-700 hover:text-purple-600">Home</a>
             <div class="relative group">
-              <a href="#" class="text-gray-700 hover:text-purple-600 flex items-center gap-1">Advertise
-                <span>▼</span></a>
-              <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block mt-2 w-40">
-                <li>
-                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 1</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 2</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 3</a>
-                </li>
+              <a href="#" class="block py-2 px-4 text-gray-700 hover:text-purple-600">Advertise ▼</a>
+              <ul class="hidden group-hover:block md:absolute bg-white shadow-md mt-2 w-40">
+                <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 1</a></li>
+                <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 2</a></li>
+                <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 3</a></li>
               </ul>
             </div>
             <div class="relative group">
-              <a href="#" class="text-gray-700 hover:text-purple-600 flex items-center gap-1">Support <span>▼</span></a>
-              <ul class="absolute left-0 hidden bg-white shadow-md group-hover:block mt-2 w-40">
-                <li>
-                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">FAQ</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Contact Support</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Live Chat</a>
-                </li>
+              <a href="#" class="block py-2 px-4 text-gray-700 hover:text-purple-600">Support ▼</a>
+              <ul class="hidden group-hover:block md:absolute bg-white shadow-md mt-2 w-40">
+                <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">FAQ</a></li>
+                <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Contact Support</a></li>
+                <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Live Chat</a></li>
               </ul>
             </div>
-            <a href="/Contact.html" class="text-gray-700 hover:text-purple-600">Contact</a>
-            <a href="#" class="text-gray-700 hover:text-purple-600">About Us</a>
+            <a href="/Contact.html" class="block py-2 px-4 text-gray-700 hover:text-purple-600">Contact</a>
+            <a href="#" class="block py-2 px-4 text-gray-700 hover:text-purple-600">About Us</a>
           </nav>
 
           <!-- Register Button -->
           <button
-            class="hidden md:block px-5 py-2 border-2 border-purple-600 text-purple-600 font-bold  hover:bg-purple-600 hover:text-white">
+            class="hidden md:block px-5 py-2 border-2 border-purple-600 text-purple-600 font-bold hover:bg-purple-600 hover:text-white">
             Register Now
           </button>
         </header>
       </div>
 
-      <!--Contact Us page-->
-      <div class="flex flex-col items-start  justify-start pb-6 mt-8 mx-16 bg-white">
+      <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+          document.getElementById('nav-menu').classList.toggle('hidden');
+        });
 
-        <h1 class="text-4xl text-gray-700 text-start mb-16 mx-14">_____ Contact Us</h1>
+        // Close dropdown when clicking outside the nav menu
+        document.addEventListener('click', function (event) {
+          const menu = document.getElementById('nav-menu');
+          const menuToggle = document.getElementById('menu-toggle');
+          if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+            menu.classList.add('hidden');
+          }
+        });
+      </script>
 
 
+      <!-- Contact Us Page -->
+      <div class="flex flex-col items-start justify-start pb-6 mt-8 mx-4 sm:mx-8 md:mx-16 bg-white">
 
-        <ul class="mx-14 flex flex-row items-center  justify-center px-6 gap-20">
-          <li class="flex flex-row items-center gap-2 mr-12">
-            <img src="/public/images/address.png" class="w-10 h-10" />
+        <h1 class="text-3xl sm:text-4xl text-gray-700 text-start mb-10 sm:mb-16 mx-4 sm:mx-8 md:mx-14">_____ Contact Us
+        </h1>
+
+        <ul
+          class="mx-4 sm:mx-8 md:mx-14 flex flex-col sm:flex-row items-start sm:items-center justify-start sm:justify-center px-4 sm:px-6 gap-8 sm:gap-12 md:gap-20">
+
+          <li class="flex flex-row items-center gap-2">
+            <img src="/public/images/address.png" class="w-8 sm:w-10 h-8 sm:h-10" />
             <div class="flex flex-col">
               <h1 class="font-semibold">Address</h1>
-              <p>Jaipur, Rajasthan, INDIA<br>Pin 342087</p>
-            </div>
-          </li>
-
-          <li class="flex flex-row items-center gap-2 mr-12">
-            <img src="/public/images/call.png" class="w-10 h-10" />
-            <div class="flex flex-col">
-              <h1 class="font-semibold">Call Us</h1>
-              <p>+91 9876543210</p>
+              <p class="text-sm sm:text-base">Jaipur, Rajasthan, INDIA<br>Pin 342087</p>
             </div>
           </li>
 
           <li class="flex flex-row items-center gap-2">
-            <img src="/public/images/email.png" class="w-10 h-10" />
+            <img src="/public/images/call.png" class="w-8 sm:w-10 h-8 sm:h-10" />
             <div class="flex flex-col">
-              <h1 class="font-semibold">Email Us</h1>
-              <p>info@test.com</p>
+              <h1 class="font-semibold">Call Us</h1>
+              <p class="text-sm sm:text-base">+91 9876543210</p>
             </div>
           </li>
-        </ul>
 
+          <li class="flex flex-row items-center gap-2">
+            <img src="/public/images/email.png" class="w-8 sm:w-10 h-8 sm:h-10" />
+            <div class="flex flex-col">
+              <h1 class="font-semibold">Email Us</h1>
+              <p class="text-sm sm:text-base">info@test.com</p>
+            </div>
+          </li>
+
+        </ul>
       </div>
 
       <!--Tailwind form -->
@@ -177,12 +189,15 @@
                   class="w-full border-b-2 border-gray-300 p-2 focus:outline-none focus:border-purple-600">
               </div>
             </div>
-            <div class="flex flex-row justify-between">
+
+
+            <!-- Counseling and CV Upload Section -->
+            <div class="flex flex-col md:flex-row justify-between gap-4 mt-6">
               <!-- Counseling Radio Buttons -->
               <div class="flex flex-col items-start">
                 <span class="text-gray-700 font-medium">Request a Counseling session?</span>
                 <div class="flex flex-row gap-4">
-                  <label class="flex  items-center space-x-2">
+                  <label class="flex items-center space-x-2">
                     <input type="radio" name="counseling" class="text-purple-600" checked>
                     <span>Yes</span>
                   </label>
@@ -199,7 +214,6 @@
                 <input type="file"
                   class="mt-1 border-b-2 border-gray-300 p-2 focus:outline-none focus:border-purple-600">
               </div>
-
             </div>
 
             <!-- Terms and Conditions -->
@@ -334,15 +348,16 @@
 
           <!-- Overlapping Middle Section -->
           <div
-            class="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 w-11/12 md:w-3/4 lg:w-2/3 bg-[#8D448B] flex flex-row py-2 px-10 items-center rounded-lg justify-around gap-4 text-center shadow-lg">
-            <h2 class="text-2xl text-[#ffff] font-bold text-start">
-              Hire the world’s best developers <br /> and designers around!
+            class="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 w-9/12 sm:w-10/12 md:w-2/3 lg:w-1/2 bg-[#8D448B] flex flex-row py-2 sm:py-3 px-3 sm:px-5 md:px-8 items-center rounded-lg justify-around gap-2 sm:gap-3 text-center shadow-lg">
+
+            <h2 class="text-sm sm:text-lg md:text-xl text-white font-bold text-start">
+              Hire the world’s best developers <br class="hidden sm:block" /> and designers around!
             </h2>
 
-            <img src="/public/images/arrow.png" class="w-40" />
+            <img src="/public/images/arrow.png" class="w-16 sm:w-20 md:w-28 lg:w-32" />
 
             <div class="flex flex-col items-center">
-              <svg width="73" height="20" class="mt-2" viewBox="0 0 73 26" fill="none"
+              <svg width="40" height="12" class="mt-1 hidden sm:block" viewBox="0 0 73 26" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.5">
                   <rect x="2.4718" y="7.89209" width="22.0884" height="3.6814" rx="1.8407"
@@ -353,11 +368,12 @@
                 </g>
               </svg>
 
-              <button class="mt-2 bg-white text-purple-700 px-6 py-2 rounded-lg font-semibold shadow-md">
+              <button
+                class="mt-1 bg-white text-purple-700 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg font-semibold shadow-md text-xs sm:text-sm">
                 HIRE DEVELOPERS
               </button>
 
-              <svg width="74" height="20" class="mb-2" viewBox="0 0 74 27" fill="none"
+              <svg width="40" height="12" class="mb-1 hidden sm:block" viewBox="0 0 74 27" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.5">
                   <rect width="22.3383" height="3.72305" rx="1.86152"
@@ -372,16 +388,21 @@
           </div>
 
 
+
+
+
+
+
+
         </div>
 
-        <!-- Footer Section -->
-        <footer class="bg-white text-gray-500 text-sm py-14 mt-8  flex flex-row gap-20 justify-center ">
-          <div class="flex flex-row gap-2">
-            <img src="/public/images/logo.png" class="w-4" />
+        <footer class="bg-white text-gray-500 text-sm py-10 mt-8 flex flex-col items-center gap-4 text-center">
+          <div class="flex flex-col sm:flex-row items-center gap-2">
+            <img src="/public/images/logo.png" class="w-6" />
             <p class="font-semibold text-gray-900">StartupLanding</p>
-            <p class="pr-20">Copyright by 2025 Srinjoy, Inc</p>
           </div>
-          <div class="space-x-2">
+          <p>Copyright by 2025 Srinjoy, Inc</p>
+          <div class="flex flex-wrap justify-center space-x-4">
             <a href="#" class="hover:underline">Home</a>
             <a href="#" class="hover:underline">Advertise</a>
             <a href="#" class="hover:underline">Supports</a>
@@ -389,6 +410,7 @@
             <a href="#" class="hover:underline">FAQ</a>
           </div>
         </footer>
+
       </div>
 
 
