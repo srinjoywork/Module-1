@@ -25,6 +25,9 @@ This project is a responsive landing page built using modern front-end technolog
 ## Live Demo
 You can check out the live version of the project here: [Live Link](https://capsitech-m1-srinjoy.netlify.app/) 
 
+## Figma Link
+Figma link of the project : [Figma link](https://www.figma.com/design/eIC90Q3MrTamoynpQZtnnQ/CT-Design-10?node-id=0-1&t=kSWyCTYOkjA6j1MR-0)
+
 ## Setup Instructions
 1. Clone the repository:
    ```sh
